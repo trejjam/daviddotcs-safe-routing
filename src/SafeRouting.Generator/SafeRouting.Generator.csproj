@@ -21,13 +21,12 @@
     <None Include="$(OutputPath)\SafeRouting.Common.dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
     <None Include="$(OutputPath)\SafeRouting.Common.dll" Pack="true" PackagePath="lib\netstandard2.0" Visible="true" />
     <None Include="$(OutputPath)\SafeRouting.Common.xml" Pack="true" PackagePath="lib\netstandard2.0" Visible="true" />
-    <None Include="$(PkgMicrosoft_AspNetCore_Razor)\lib\netstandard2.0\Microsoft.AspNetCore.Razor.dll" Pack="true" PackagePath="lib\netstandard2.0" Visible="false" />
     <None Include="..\..\README.md" Link="README.md" Pack="true" PackagePath="\README.md" />
     <None Include="..\icon.png" Pack="true" PackagePath="\" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Razor" GeneratePathProperty="true" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor" PrivateAssets="all" />
     <PackageReference Include="Microsoft.CodeAnalysis.CSharp" VersionOverride="4.0.1" PrivateAssets="all" />
     <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" PrivateAssets="all" />
     <PackageReference Include="PolySharp">
